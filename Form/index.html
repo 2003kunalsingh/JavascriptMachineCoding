@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #err{
+            color: red;
+        }
+        #success{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>hi i am form</h1>
+    <form onsubmit="validateForm(event)">
+        <label>Name</label>
+        <input type="text" name="name" placeholder=" enter name" id="name"/>
+        <br>
+        <br>
+        <label>Email</label>
+        <input type="email" name="email" placeholder=" enter email" id="email"/>
+        <br>
+        <br>
+        <label>Password</label>
+        <input type="password" name="password" placeholder=" enter password" id="pass"/>
+        <br>
+        <br>
+        <div class="gender">
+        
+        <label>Gender:</label>
+      <label > <input type="radio" name="gender" value="male"/>Male</label> 
+       <label> <input type="radio" name="gender" value="female"/>Female</label>
+       </div>
+       <label> <input type="checkbox" id="terms"/>Agree terms and Condition</label>
+
+<div>
+    <button type="submit">Submit</button>
+    <p id="err"></p>
+    <p id="success"></p>
+</div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
